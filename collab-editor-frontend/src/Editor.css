@@ -1,0 +1,19 @@
+/* Remove Quill snow theme borders */
+.ql-container.ql-snow {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* If you still see an inner border in the editor content area */
+.ql-editor {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* (Optional) Remove the toolbar’s bottom border too */
+/* src/Editor.css */
+
+.ql-toolbar.ql-snow {
+  border: none !important;
+  box-shadow: none !important;
+}

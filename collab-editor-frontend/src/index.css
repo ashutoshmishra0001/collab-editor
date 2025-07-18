@@ -1,0 +1,105 @@
+/* Reset & Base */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 16px;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Utility */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Home Page */
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.home h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.home button {
+  background: #4f46e5;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.home button:hover {
+  background: #4338ca;
+}
+
+/* Editor */
+.editor-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.editor-header {
+  background: #fff;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.editor-header h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.editor-header .status {
+  font-size: 0.9rem;
+  color: #10b981;
+}
+.editor-body {
+  flex: 1;
+  background: #fff;
+  margin: 1rem 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  overflow: hidden;
+  display: flex;
+}
+.quill-container {
+  flex: 1;
+  padding: 1rem;
+}
+.editor-footer {
+  background: #fff;
+  padding: 0.5rem 1rem;
+  border-top: 1px solid #e5e7eb;
+  text-align: right;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .editor-header h2 {
+    font-size: 1rem;
+  }
+  .home h1 {
+    font-size: 2rem;
+  }
+}
